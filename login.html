@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
+    </head>
+
+    <body onload="myFunction()">
+
+        <!-- NavBar & Image -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Appetit</a>
+                </div>
+                <!-- End Logo-->
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="services.html"> Services</a></li>
+                    <li><a href="about.html"> About Us</a></li>
+                    <li><a href="contact.html"> Contact</a></li>
+                    <li><a href="login.html"> Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End NavBar & Image-->
+
+        <div class="container-fluid">
+            <img class="img-responsive" style="width: 80%; max-height: 500px; display: block; margin: auto;" src="images/login-reg.jpg">
+        </div>
+
+        <div class="buttons text-center">
+            <button class="btn warning" onclick="myLogin()">Login</button>
+            <button class="btn danger" onclick="myRegister()">Register</button>
+        </div>
+
+        <!--   REGISTRATION STARTS   -->
+
+        <div class="container-fluid form-div registration">
+            <div style="margin:20px 15px" class="row">
+                <div class="main-login main-center-reg" id="REG">
+                    <h2>Registration Form</h2>
+                    <form class="" method="post" action="#">
+
+                        <div class="form-group">
+                            <label for="name" class="cols-sm-2 control-label">Your Name</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="cols-sm-2 control-label">Your Email</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="username" class="cols-sm-2 control-label">Username</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="cols-sm-2 control-label">Password</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                    <input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                    <input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group ">
+                            <a href="#" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--   REGISTRATION ENDS     -->
+
+        <!--   LOGIN START     -->
+
+        <div class="container-fluid">
+            <div style="margin:-40px 15px 40px 15px" class="row">
+                <div class="main-login main-center-login" id="LOGIN">
+                    <h2>Login Form</h2>
+                    <form class="" method="post" action="#">
+
+                        <div class="form-group">
+                            <label for="username" class="cols-sm-2 control-label">Username</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="cols-sm-2 control-label">Password</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                    <input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                    <input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group ">
+                            <a href="#" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Login</a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--   Footer Starts    -->
+        <br><br>
+        <div class="container-fluid text-center">
+            <footer>
+                <img src="images/fb.png" width=40/>
+                <img src="images/twitter.png" width=40/>
+                <img src="images/insta.png" width=40/>
+                <img src="images/gplus.png" width=40/>
+                <img src="images/youtube.png" width=40/>
+                <img src="images/linkedin.png" width=40/>
+
+                <br><br>
+                <font face='Malgun Gothic' size=2>All rights reservered to  <font color=#ff8c00> Appétit 2017. </font>
+                </font>
+            </footer>
+        </div>
+        <!--   Footer Ends     -->
+
+        <!--   LOGIN ENDS     -->
+
+        <!----- JAVA SCRIPT ------>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("LOGIN");
+                var y = document.getElementById("REG");
+                document.body.style.backgroundColor = "#1abc9c";
+                y.style.display = "none";
+                x.style.display = "block";
+            }
+
+            function myRegister() {
+                var x = document.getElementById("LOGIN");
+                var y = document.getElementById("REG");
+                document.body.style.backgroundColor = "#e74c3c";
+                    x.style.display = "none";
+                    y.style.display = "block";
+            }
+
+            function myLogin() {
+                var x = document.getElementById("LOGIN");
+                var y = document.getElementById("REG");
+                document.body.style.backgroundColor = "#1abc9c";
+                    y.style.display = "none";
+                    x.style.display = "block";
+            }
+        </script>
+
+
+    </body>
+</html>

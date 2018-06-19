@@ -1,0 +1,23 @@
+a{
+    color: orange;
+}
+a:link, a:visited{
+    text-decoration:none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', serif;
+}
+.navbar-header .navbar-brand{
+    color:#000000;
+}
+
+.members img{
+    border-radius: 50%;
+    width: 50%;
+    margin: 5px;
+}
+.section1{
+    padding: 4%;
+}

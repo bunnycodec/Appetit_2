@@ -1,0 +1,28 @@
+header{
+  background-color: #59d5d8;
+  height: 150px;
+  padding: 0 px;
+}
+header h1{
+  text-transform: uppercase;
+  text-align: center;
+  color:#fff;
+  line-height: 50px;
+}
+header h2{
+  font-variant: small-caps;
+  text-align: center;
+  color: #fff;
+}
+
+footer{
+  background-color: #59d5d8;
+  height: 50px;
+  padding: 10 px;
+}
+footer h1{
+  text-transform: lowercase;
+  text-align: center;
+  color:#fff;
+  line-height: 50px;
+}
